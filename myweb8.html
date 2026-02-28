@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMALEARN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .search-engine {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-engine input[type="search"] {
+            padding: 0.5em;
+            border: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-engine button {
+            padding: 0.5em;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .menu-button {
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+
+        .menu-window {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            display: none;
+        }
+
+        .menu-window ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-window li {
+            margin-bottom: 1em;
+        }
+
+        .menu-window a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .animation-part {
+            text-align: center;
+            margin-top: 5em;
+        }
+
+        #animation-text {
+            font-size: 2em;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .info-part {
+            text-align: center;
+            margin-top: 10em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .info-part a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .login-part {
+            text-align: center;
+            margin-top: 5em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .login-part a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .advantages-part {
+            text-align: center;
+            margin-top: 5em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .advantages-part h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .advantages-part ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .advantages-part li {
+            margin-bottom: 1em;
+        }
+
+        .job-opportunities-part {
+            text-align: center;
+            margin-top: 5em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .job-opportunities-part h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .job-opportunities-part ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .job-opportunities-part li {
+            margin-bottom: 1em;
+        }
+
+        .advice-part {
+            text-align: center;
+            margin-top: 5em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .advice-part h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .company-details-part {
+            text-align: center;
+            margin-top: 5em;
+            padding: 2em;
+            font-size: 1.2em;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .company-details-part h2 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="search-engine">
+            <input type="search" id="search" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="menu-button" onclick="toggleMenu()">&#9776;</div>
+        <div class="menu-window" id="menu-window">
+            <ul>
+                <li><a href="#">1. KNOW MORE ABOUT EMALEARN</a></li>
+                <li><a href="#">2. KNOW MORE ABOUT OUR COURSE</a></li>
+                <li><a href="#">3. CONTACT</a></li>
+                <li><a href="#">4. LOGIN OR REGISTER</a></li>
+                <li><a href="#">5. MINOR DASHBOARD</a></li>
+                <li><a href="#">6. MAJOR DASHBOARD</a></li>
+                <li><a href="#">7. LEARN</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="animation-part">
+            <h1 id="animation-text"></h1>
+        </div>
+        <div class="info-part">
+            <p>Welcome lovely users, this platform ensures that you can learn the theory part of coding and do the practical part of coding. The learning is done in the "<a href="#">MINOR DASHBOARD</a>", where it includes free learning and free dashboard coding. If you want just to code not to learn just go to the "<a href="#">MAJOR DASHBOARD</a>", where you can code for free and get your code easy. Thank you.</p>
+        </div>
+        <div class="login-part">
+            <p>If you want to use our platform, please <a href="#">LOGIN</a> or <a href="#">REGISTER</a> to get started.</p>
+        </div>
+        <div class="advantages-part">
+            <h2>Advantages of Coding</h2>
+            <ul>
+                <li>Improves problem-solving skills</li>
+                <li>Enhances logical thinking</li>
+                <li>Boosts career opportunities</li>
+                <li>Increases earning potential</li>
+                <li>Develops creativity and innovation</li>
+            </ul>
+        </div>
+        <div class="job-opportunities-part">
+            <h2>Job Opportunities in Programming</h2>
+            <ul>
+                <li>Software Developer: $80,000 - $150,000 per year</li>
+                <li>Data Scientist: $100,000 - $200,000 per year</li>
+                <li>Web Developer: $60,000 - $120,000 per year</li>
+                <li>Mobile App Developer: $70,000 - $140,000 per year</li>
+                <li>Cybersecurity Specialist: $90,000 - $180,000 per year</li>
+            </ul>
+        </div>
+        <div class="advice-part">
+            <h2>Advice for Programmers</h2>
+            <p>Stay up-to-date with the latest technologies, practice regularly, and join online communities to improve your skills.</p>
+        </div>
+        <div class="company-details-part">
+            <h2>Company Details</h2>
+            <p>Company Name: EMALAWI19</p>
+            <p>Company Origin: Malawi</p>
+            <p>Company Email: <a href="mailto:emalawi19@gmail.com">emalawi19@gmail.com</a></p>
+            <p>Company Products: Software Engineering, Agriculture</p>
+            <p>Company Founded: Roosevelt</p>
+        </div>
+    </main>
+
+    <script>
+        let menuOpen = false;
+        let animationTexts = [
+            "WELCOME TO EMALEARN WERE TO LEARN AND ADVANCE IN PROGRAMMING LANGUAGES.",
+            "DO YOU WANT TO LEARN AND ADVANCE IN PROGRAMMING LANGUAGES? , DON'T WORRY LEARN EASELY IN OUR PLATFORM EMALEARN",
+            "YOU CAN ALSO CODE DIFFERENT PROGRAMMING LANGUAGES IN OUR PLATFORM EMALEARN FOR FREE ON OUR MAJOR DASHBOARD "
+        ];
+        let currentTextIndex = 0;
+        let currentCharIndex = 0;
+        let typingSpeed = 50;
+
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            document.getElementById("menu-window").style.display = menuOpen ? "block" : "none";
+        }
+
+        function animateText() {
+            let text = animationTexts[currentTextIndex];
+            let animationTextElement = document.getElementById("animation-text");
+
+            if (currentCharIndex < text.length) {
+                animationTextElement.innerHTML += text.charAt(currentCharIndex);
+                currentCharIndex++;
+                setTimeout(animateText, typingSpeed);
+            } else {
+                setTimeout(() => {
+                    animationTextElement.innerHTML = "";
+                    currentCharIndex = 0;
+                    currentTextIndex = (currentTextIndex + 1) % animationTexts.length;
+                    animateText();
+                }, 2000);
+            }
+        }
+
+        animateText();
+    </script>
+</body>
+</html>
